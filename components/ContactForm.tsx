@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { contactPayloadSchema } from "@/lib/validators/contact";
 
 const initial = {
@@ -12,6 +13,7 @@ const initial = {
 };
 
 export default function ContactForm() {
+  const router = useRouter();
   const [values, setValues] = useState(initial);
   const [fieldErrors, setFieldErrors] = useState<Record<string, string[]>>({});
   const [formError, setFormError] = useState<string | null>(null);
@@ -58,6 +60,7 @@ export default function ContactForm() {
       setSuccess("Thank you — your message has been received.");
       setValues(initial);
       setFieldErrors({});
+      router.push("/users");
     } catch {
       setFormError("Network error. Try again.");
     } finally {
