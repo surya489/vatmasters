@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="few-vat-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAT Masters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://ftehcojhebcsmxvmzpar.supabase.co">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  
+  <!-- Preloads for Speed -->
+  <!-- Image preloads removed: JSX uses imagetools-resized versions (different URLs).
+       Hero image still loads fast via fetchpriority="high" attribute on <img> tag. -->
+  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrJJfecg.woff2" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+  <script>
+    /* Extreme Non-blocking CSS Loader - Optimized for Fonts */
+    (function() {
+      var loadCSS = function() {
+        var links = document.getElementsByTagName('link');
+        for (var i = 0; i < links.length; i++) {
+          // Skip Google Fonts and Preloads
+          if (links[i].rel === 'stylesheet' && !links[i].href.includes('fonts.googleapis.com') && !links[i].getAttribute('data-nload')) {
+            links[i].rel = 'preload';
+            links[i].as = 'style';
+            links[i].setAttribute('data-nload', '1');
+            links[i].onload = function() { this.rel = 'stylesheet'; };
+          }
+        }
+      };
+      loadCSS();
+      window.addEventListener('DOMContentLoaded', loadCSS);
+    })();
+  </script>
+
+  <style>
+    /* Critical Hero CSS for Instant Paint (1s Speed Index) */
+    :root { --hh-bg: #223b41; --hh-cyan: #00e6f6; }
+    body { background: #fff; margin: 0; overflow-x: hidden; font-family: 'Poppins', sans-serif; }
+    .hh-section { background: #223b41; border-radius: 42px; min-height: 500px; position: relative; overflow: hidden; background-size: 100% 100% !important; }
+    .homepage-container { padding: 0.5rem 1rem; }
+    
+    @font-face {
+      font-family: 'bootstrap-icons';
+      src: local('bootstrap-icons');
+      font-display: swap;
+    }
+  </style>
+
+  <!-- Google Tag Manager (Optimized Load) -->
+  <script>
+    (function() {
+      var gtmLoaded = false;
+      function loadGTM() {
+        if (gtmLoaded) return; gtmLoaded = true;
+        setTimeout(function() {
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MK2FF99');
+        }, 10000);
+      }
+      window.addEventListener('scroll', loadGTM, {once: true});
+      window.addEventListener('mousemove', loadGTM, {once: true});
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-Cjx1lh2Z.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/react-vendor-IUIFzW6G.js">
+  <link rel="preload" as="style" href="/assets/index-CV2Q6jc5.css" data-nload="1" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-CV2Q6jc5.css"></noscript>
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK2FF99" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <div id="root"></div>
+
+  <!-- Non-blocking Tracker Loading -->
+  <script>
+    window.addEventListener('load', function() {
+      const runTrackers = () => {
+        // Smartlook
+        window.smartlook || (function (d) {
+          var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+          var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
+          c.charset = 'utf-8'; c.src = 'https://web-sdk.smartlook.com/recorder.js'; h.appendChild(c);
+        })(document);
+        smartlook('init', '5e9c313e302f17492f2bf2770bc37523a0e88203', { region: 'eu' });
+
+        // Tawk.to
+        var s1 = document.createElement('script'), s0 = document.getElementsByTagName('script')[0];
+        s1.async = true; s1.src = 'https://embed.tawk.to/62e8a6a337898912e960c017/1g9eclsqa';
+        s1.charset = 'UTF-8'; s1.setAttribute('crossorigin', '*'); s0.parentNode.insertBefore(s1, s0);
+
+        // Supabase
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(function () {
+            var s = document.createElement('script'); s.async = true;
+            s.src = "https://ftehcojhebcsmxvmzpar.supabase.co/functions/v1/tracker-script";
+            s.setAttribute('data-endpoint', "https://ftehcojhebcsmxvmzpar.supabase.co/functions/v1/visitor-track");
+            document.head.appendChild(s);
+          });
+        }
+      };
+      
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => setTimeout(runTrackers, 5000));
+      } else {
+        setTimeout(runTrackers, 10000);
+      }
+    });
+  </script>
+
+</body>
+
+</html>
