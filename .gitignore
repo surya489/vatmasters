@@ -9,3 +9,13 @@ yarn-debug.log*
 yarn-error.log*
 
 .DS_Store
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
